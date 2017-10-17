@@ -4,6 +4,7 @@
 package com.hello.world;
 
 import com.hello.git.HelloGit;
+import com.hello.singlton.SingltonClass;
 
 /**
  * @author Sathish
@@ -20,6 +21,10 @@ public class HelloWorld {
 		
 		HelloGit helloGit = new HelloGit();
 		helloGit.sayHelloGit();
+		
+		SingltonClass singltonClass = SingltonClass.getInstance();
+		
+		singltonClass.saySingltonClass();
 	}
 
 }
